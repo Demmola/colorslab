@@ -1,0 +1,39 @@
+
+@startuml
+title COLORS Lab - Login Activity Diagram
+
+start
+
+:Receive JSON login request;
+:Decode JSON using getRequestInfo();
+:Initialize user information;
+:Connect to MySQL database;
+
+if (Database connection successful?) then (Yes)
+
+    :Prepare SELECT query on Users table;
+    :Bind login and password;
+    :Execute SQL query;
+    :Get query result;
+
+    if (Matching user found?) then (Yes)
+        :Fetch user information;
+        :Return JSON with user ID,
+        first name, last name,
+        and empty error;
+    else (No)
+        :Return JSON with
+        "No Records Found" error;
+    endif
+
+    :Close SQL statement;
+    :Close database connection;
+
+else (No)
+    :Return JSON with
+    database connection error;
+endif
+
+stop
+
+@enduml
