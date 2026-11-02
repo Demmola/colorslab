@@ -1,0 +1,30 @@
+@startuml
+title COLORS Lab - Conceptual Class Diagram
+
+skinparam classAttributeIconSize 0
+
+class User <<entity>> {
+    ID
+    firstName
+    lastName
+    Login
+    Password
+}
+
+class Color <<entity>> {
+    UserId
+    Name
+}
+
+User "1" -- "0..*" Color : owns
+
+note bottom of User
+  Represents the Users
+  database table
+end note
+
+note bottom of Color
+  Represents the Colors
+  database table
+end note
+@enduml
