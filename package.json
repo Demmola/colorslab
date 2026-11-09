@@ -1,0 +1,33 @@
+{
+  "name": "colorslab",
+  "version": "1.0.0",
+  "description": "The COLORS Lab is a web application I worked on for my COP 4331 class. The main goal of this project was to get familiar with full-stack web development and understand how the frontend, backend, and database work together.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demmola/colorslab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Demmola/colorslab/issues"
+  },
+  "homepage": "https://github.com/Demmola/colorslab#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-html": "^8.2.1",
+    "globals": "^17.14.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0"
+  }
+}
